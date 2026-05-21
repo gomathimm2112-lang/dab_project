@@ -3,7 +3,7 @@ name: ci-workflow
 on:
   push:
     branches:
-      - 'features/**'
+      - 'feature/**'
   pull_request:
     branches:
       - 'main'
@@ -28,7 +28,7 @@ jobs:
       - name: Run Pytest & generate HTML reports
         run: |
           pytest \
-            --disable-warnings \
+            --disable-warnings\
             --cov=./src \
             --cov-report=html
             

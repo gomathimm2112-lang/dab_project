@@ -16,7 +16,7 @@ You will also need to update the `databricks.yml` configuration file with your W
 
 You'll also want to set up local Python environments for Databricks Connect and local PySpark development. Follow the instructions for your platform below.
 
-### Virtual Environment Set-up....
+### Virtual Environment Set-up
 
 #### macOS / Linux
 

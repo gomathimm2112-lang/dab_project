@@ -34,7 +34,7 @@ targets:
     workspace:
       host: https://adb-7405608591548359.19.azuredatabricks.net
       # We explicitly deploy to /Workspace/Users/gomathimm2112@gmail.com to make sure we only have a single copy.
-      root_path: /Workspace//Shared/.bundle/${bundle.name}/${bundle.target}
+      root_path: /Workspace/Shared/.bundle/${bundle.name}/${bundle.target}
     permissions:
       - service_principal_name: 498f1d18-58cc-4092-8ff3-af83305a2580
       #- service_principal_name: sp-databricks-test-uksouth
@@ -53,7 +53,7 @@ targets:
     workspace:
       host: https://adb-7405619216695504.4.azuredatabricks.net
       # We explicitly deploy to /Workspace/Users/gomathimm2112@gmail.com to make sure we only have a single copy.
-      root_path: /Workspace//Shared/.bundle/${bundle.name}/${bundle.target}
+      root_path: /Workspace/Shared/.bundle/${bundle.name}/${bundle.target}
     permissions:
       - service_principal_name: 0024b79c-e30f-479c-87a1-af157ef21d4e
       #- service_principal_name: sp-databricks-test-uksouth

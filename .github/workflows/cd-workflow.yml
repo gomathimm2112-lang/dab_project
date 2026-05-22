@@ -38,6 +38,12 @@ jobs:
           azure_client_secret = ${{ secrets.AZURE_CLIENT_SECRET }}
           EOF
 
+      - name: Validate Databricks Bundle
+        run: |
+          databricks bundle validate \
+            --target test \
+            --profile TEST
+            
       - name: Deploy to TEST
         run: |
           databricks bundle deploy \
@@ -77,6 +83,12 @@ jobs:
           azure_client_secret = ${{ secrets.AZURE_CLIENT_SECRET }}
           EOF
 
+      - name: Validate Databricks Bundle
+        run: |
+          databricks bundle validate \
+            --target prod \
+            --profile PROD
+            
       - name: Deploy to PROD
         run: |
           databricks bundle deploy \
